@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+:root{
+    /* Primary */
+    --color-white: rgb(255, 255, 255);
+    --color-violet: rgb(117, 83, 241);
+    --color-black:rgb(0 0 0);
+    --color-Brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --color-Verypaleblue: hsl(225, 100%, 98%);
+    --color-Desaturatedblue: hsl(224, 23%, 55%);
+    --color-Darkblue: hsl(223, 47%, 23%);
+
+    --font-size: 16px;
+}
+
+ 
+body {
+    margin: 0;
+    font-family: "Red Hat Display";
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-color: rgba(83, 75, 239, 0.25);
+    background-blend-mode: multiply;
+  }
+ 
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:100%;
+    width: 100%;
+    height: 98dvh;
+}
+
+
+.card {
+    margin-top: auto;
+    border-radius: 20px;
+    height: 690px;
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 450px) { 
+    .card {
+      width: 80%;
+      height: auto;
+    }
+  
+    .illustration {
+      width: 100%;
+    }
+  } 
+
+.illustration {
+    border-radius: 20px 20px 0px 0px;
+}
+
+main {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--color-Darkblue);
+}
+
+p {
+    margin: 0;
+    padding: 16px 0px;
+    text-align: center;
+    font-size: var(--font-size);
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-Desaturatedblue);
+}
+
+.plan-changer {
+    display: flex;
+    flex-direction:row;
+    padding: 24px 22px;
+    border: 1px solid var(--color-Verypaleblue);
+    border-radius: 10px;
+    background-color: var(--color-Verypaleblue);
+    width: 100%;
+    max-width: 88%;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.vertical-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 26px;
+}
+
+.name-plan {
+    font-size: var(--font-size);
+    font-weight: 900;
+    width: 92px;
+    height: 26px;
+    color:var(--color-Darkblue);
+}
+
+.prise {
+    font-size: var(--font-size);
+    font-weight:500;
+    color: var(--color-Desaturatedblue);
+}
+
+.another-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight:700;
+    color: var(--color-Brightblue);
+    text-decoration: underline;
+    margin-left: auto;
+     
+}
+
+.another-choice:hover {
+    cursor: pointer;
+    color: var(--color-violet);
+}
+
+button {
+    font-size: 15px;  
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: 50px;
+    margin: 28px  0px 20px 0px;
+    border: 1px solid;
+    border-radius: 12px;
+    border-color: var(--color-Brightblue);
+    color: var(--color-white);
+    background-color: var(--color-Brightblue);
+    box-shadow: 0px 24px 14px 0px rgba(72, 71, 148, 0.17);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-violet);
+}
+
+.abolition {
+    padding: 8px 0px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--color-Desaturatedblue);
+}
+
+.abolition:hover {
+    cursor: pointer;
+    color: var(--color-Darkblue);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto;
+    justify-content: center;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover {
+    color: var(--color-black);
+}
